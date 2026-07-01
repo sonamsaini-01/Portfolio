@@ -45,5 +45,14 @@ def books_to_scrape():
     # Pass the data to your HTML file
     return render_template("books_to_scrape.html", books=scraped_data)
 
+@app.route('/viewer')
+def viewer():
+    return render_template('viewer.html')
+
+@app.route("/scraping/api")
+def scraping_api():
+    return render_template("scraping_api.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
