@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/scraping_static.css') }}">
+
+<section class="scraping-subpage">
+    <div class="subpage-banner">
+        <div class="container">
+            <h1 class="banner-title">Static Website Scraping</h1>
+            <p class="banner-subtitle">Websites scraped using Requests + BeautifulSoup.</p>
+        </div>
+    </div>
+
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px 80px;">
+        <div class="static-grid">
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Books To Scrape</h3>
+                <p>Practice website for scraping books.</p>
+                <a href="{{ url_for('books_to_scrape') }}" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>Amazon</h3>
+                <p>Product price and rating extraction.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>IMDb</h3>
+                <p>Top movies and ratings scraping.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <h3>BBC News</h3>
+                <p>Extract latest news headlines.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <h3>Wikipedia</h3>
+                <p>Collect structured article content.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-baseball-bat-ball"></i>
+                </div>
+                <h3>ESPN Cricinfo</h3>
+                <p>Player and match statistics scrape.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>GitHub Trending</h3>
+                <p>Trending repositories collection.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div class="icon-wrapper">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Indeed Jobs</h3>
+                <p>Job listings and company details.</p>
+                <a href="#" class="pill-btn">View Project</a>
+            </div>
+
+        </div>
+        
+        <div class="subpage-footer">
+            <p>© 2026 Web Scraping Tutorials</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
