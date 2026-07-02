@@ -53,6 +53,10 @@ def viewer():
 def scraping_api():
     return render_template("scraping_api.html")
 
+@app.route("/scraping/dynamic")
+def scraping_dynamic():
+    return render_template("scraping_dynamic.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
