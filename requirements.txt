@@ -1,4 +1,4 @@
-Flasak 
+Flask 
 gunicorn
 requests
 beautifulsoup4
